@@ -1,7 +1,5 @@
-import react from "react";
-import { makeStyles } from '@material-ui/core/styles';
-import Fab from '@material-ui/core/Fab';
-import { Button, Grid, Paper } from "@material-ui/core";
+import React from 'react';
+import { Button, Fab, Grid, Paper } from "@mui/material";
 // mudar os bootstrap para material
 // pegar a img somento do celular
 // procurar vetor do ios e android

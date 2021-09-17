@@ -1,4 +1,4 @@
-import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Typography } from "@material-ui/core";
+import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
 import clsx from "clsx";
 import PropTypes from 'prop-types';
 import React from "react";
@@ -13,7 +13,7 @@ const CardMedicos = ({nomeMedico, descricao, }) => {
             component="img"
             alt={nomeMedico}
             height="398"
-            image='./img/Medico01.png'
+            image='../img/Medico01.png'
             title={`Dr. ${nomeMedico}`}
           />
           <CardContent>

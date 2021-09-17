@@ -1,6 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { Container, Grid, Paper } from '@material-ui/core'
+import { Container, Grid, Paper } from '@mui/material'
 // Ver se sou eu que não estou sabendo pegar os arquivos separados ou seu está tudo junto 
 //
 const Especialidade = props => {
