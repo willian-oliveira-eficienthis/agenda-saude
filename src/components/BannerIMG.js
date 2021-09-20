@@ -1,22 +1,28 @@
-import { Image } from '@material-ui/icons';
-import { Card, CardMedia, Container, Paper } from '@mui/material';
+import { makeStyles } from '@material-ui/styles';
+import { Container } from '@material-ui/core';
 import React from 'react';
 import banner from './img/Grupo2403.png';
 
-const styles = {
+const useStyles = makeStyles ({
+  banner:{
+    padding: 0,
+  },
   paperContainer: {
+    width: 'inherit',
     height: 857,
     backgroundSize: 'contain',
     backgroundPosition: 'center center',
-    backgoundRepeat: 'no-repeat',
-    backgroundImage: `url(${banner})`
+    // backgroundRepeat: 'no-repeat',
+    // backgroundImage: `url(${banner})`
   }
-};
+});
 const BannerIMG = () => {
+  const classes = useStyles();
   return (
     <div>
-      <Container style={styles.paperContainer} >
-        
+      <Container className={classes.banner} >
+        <img src={banner} className={classes.paperContainer} alt='banner'/>
+          
       </Container>
       {/* <Container sx={{
         backgroundImage: `url(${banner})`,

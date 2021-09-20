@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Grid, Paper } from '@mui/material'
+import { Container, Grid, Paper } from '@material-ui/core'
 // Ver se sou eu que não estou sabendo pegar os arquivos separados ou seu está tudo junto 
 //
 const Especialidade = props => {

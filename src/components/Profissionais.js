@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Grid} from '@mui/material'
+import { Container, Grid} from '@material-ui/core'
 import CardMedicos from './CardMedicos'
 
 const Profissionais = props => {
