@@ -33,7 +33,6 @@ const Rodape = props => {
           <Grid item md={6} >
             <Typography align ='right'>
               Políticas de Privacidade | Termos e Condições
-
             </Typography>
           </Grid>
 
