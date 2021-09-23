@@ -17,6 +17,10 @@ const useStyles = makeStyles({
     backgroundSize: 'contain',
     backgroundPosition: 'center center',
   },
+  imgContainer:{
+    width: '100%'
+
+  },
   textContainet: {
     position: 'absolute',
     left: 111,
@@ -37,23 +41,34 @@ const useStyles = makeStyles({
     color:'#46d5cb',
   },
   fonteBannerPrincipal:{
+    paddingLeft:-24,
+    paddingRight: -24,
+    fontWeight: 800,
     color: '#fff',
     fontSize: 38,
     
   },
+  fonteBannerBase: {
+    width: 648,
+    height: 79,
+    fontFamily: 'Poppins',
+    fontSize: 18,
+    color: '#fff',
+
+  }
 
 });
 
 const BannerPrincipal = props => {
   const classes = useStyles();
   return (
-    <div>
+    <div maxWidth='lg'>
       <Container className={classes.bannerPrincipal} >
-        <img src={bannerPrincipal} className={classes.paperContainer} alt='banner' />
+        <img src={bannerPrincipal} className={classes.imgContainer} alt='banner' />
         <div className={classes.textContainet} >
           <p className={classes.bemVindo}> Bem vindo ao <span className={classes.agendaSaude}>Agenda Saúde</span> </p>
           <p className={classes.fonteBannerPrincipal}> Simples, transparente <br /> e Inovadora! </p>
-          <p>Inspirado em você, o Agenda Saúde nasceu, para deixar o agendamento da sua consulta masi fácio e rápida</p>
+          <p className={classes.fonteBannerBase}>Inspirado em você, o Agenda Saúde nasceu, para deixar o agendamento da sua consulta mais fácil e rápida</p>
 
         </div>
       </Container>

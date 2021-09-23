@@ -6,10 +6,12 @@ import Profissionais from './components/Profissionais';
 import Rodape from './components/Rodape';
 import { ThemeProvider } from '@material-ui/styles';
 import theme from './theme';
+import NavBar from './components/NavBar';
 function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme} >
+        <NavBar />
         <BannerPrincipal />
         <FormFiltro />
         <Especialidade />
